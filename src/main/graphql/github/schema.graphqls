@@ -1,0 +1,11 @@
+type Query {
+  # 查询的根入口点，用于获取用户信息
+  user(login: String!): User
+}
+
+type User {
+  # User 类型定义了可以查询用户的哪些字段
+  name: String
+  bio: String
+  avatarUrl: String
+}
